@@ -1,0 +1,32 @@
+# Curriculum modules
+
+The canonical order is foundational and cumulative. Each `P##` is one governed,
+reviewable implementation batch. `implemented` means the complete learner slice exists;
+`scaffolded` means the batch is intentionally non-runnable.
+
+| Batch | Phase | Module | Guiding question | Status |
+| --- | --- | --- | --- | --- |
+| P01 | 1: Mission and behavior | [Build a Closed-Loop Timing Budget](../modules/01-build-a-closed-loop-timing-budget/README.md) | How do stage delay and jitter determine whether a closed loop meets its timing requirement? | implemented |
+| P02 | 1: Mission and behavior | [Write a CONOPS from an Operator Goal](../modules/02-write-a-conops-from-an-operator-goal/README.md) | What inputs, observable effects, and failure modes matter when you write a CONOPS from an Operator Goal? | scaffolded |
+| P03 | 1: Mission and behavior | [Define Desired Physical Behavior](../modules/03-define-desired-physical-behavior/README.md) | What inputs, observable effects, and failure modes matter when you define Desired Physical Behavior? | scaffolded |
+| P04 | 1: Mission and behavior | [Decompose a System into Functions](../modules/04-decompose-a-system-into-functions/README.md) | What inputs, observable effects, and failure modes matter when you decompose a System into Functions? | scaffolded |
+| P05 | 2: Allocation and interfaces | [Allocate Functions Across Hardware and Software](../modules/05-allocate-functions-across-hardware-and-software/README.md) | What inputs, observable effects, and failure modes matter when you allocate Functions Across Hardware and Software? | scaffolded |
+| P06 | 2: Allocation and interfaces | [Trace a Command Path](../modules/06-trace-a-command-path/README.md) | What inputs, observable effects, and failure modes matter when you trace a Command Path? | scaffolded |
+| P07 | 2: Allocation and interfaces | [Trace a Measurement Data Path](../modules/07-trace-a-measurement-data-path/README.md) | What inputs, observable effects, and failure modes matter when you trace a Measurement Data Path? | scaffolded |
+| P08 | 2: Allocation and interfaces | [Write an Interface Control Contract](../modules/08-write-an-interface-control-contract/README.md) | What inputs, observable effects, and failure modes matter when you write an Interface Control Contract? | scaffolded |
+| P09 | 3: Sequencing and synchronization | [Design Startup and Shutdown Sequences](../modules/09-design-startup-and-shutdown-sequences/README.md) | What inputs, observable effects, and failure modes matter when you design Startup and Shutdown Sequences? | scaffolded |
+| P10 | 3: Sequencing and synchronization | [Model System States and Transitions](../modules/10-model-system-states-and-transitions/README.md) | What inputs, observable effects, and failure modes matter when you model System States and Transitions? | scaffolded |
+| P11 | 3: Sequencing and synchronization | [Budget Latency and Jitter](../modules/11-budget-latency-and-jitter/README.md) | What inputs, observable effects, and failure modes matter when you budget Latency and Jitter? | scaffolded |
+| P12 | 3: Sequencing and synchronization | [Synchronize Distributed Equipment](../modules/12-synchronize-distributed-equipment/README.md) | What inputs, observable effects, and failure modes matter when you synchronize Distributed Equipment? | scaffolded |
+| P13 | 4: Verification architecture | [Turn Requirements into Verification Methods](../modules/13-turn-requirements-into-verification-methods/README.md) | What inputs, observable effects, and failure modes matter when you turn Requirements into Verification Methods? | scaffolded |
+| P14 | 4: Verification architecture | [Build a Verification Cross-Reference Matrix](../modules/14-build-a-verification-cross-reference-matrix/README.md) | What inputs, observable effects, and failure modes matter when you build a Verification Cross-Reference Matrix? | scaffolded |
+| P15 | 4: Verification architecture | [Choose Instrumentation and Observability Points](../modules/15-choose-instrumentation-and-observability-points/README.md) | What inputs, observable effects, and failure modes matter when you choose Instrumentation and Observability Points? | scaffolded |
+| P16 | 4: Verification architecture | [Define Acceptance Criteria](../modules/16-define-acceptance-criteria/README.md) | What inputs, observable effects, and failure modes matter when you define Acceptance Criteria? | scaffolded |
+| P17 | 5: Integration and faults | [Plan an Incremental Integration Sequence](../modules/17-plan-an-incremental-integration-sequence/README.md) | What inputs, observable effects, and failure modes matter when you plan an Incremental Integration Sequence? | scaffolded |
+| P18 | 5: Integration and faults | [Contain and Propagate Faults Deliberately](../modules/18-contain-and-propagate-faults-deliberately/README.md) | What inputs, observable effects, and failure modes matter when you contain and Propagate Faults Deliberately? | scaffolded |
+| P19 | 5: Integration and faults | [Perform Root-Cause Analysis from Evidence](../modules/19-perform-root-cause-analysis-from-evidence/README.md) | What inputs, observable effects, and failure modes matter when you perform Root-Cause Analysis from Evidence? | scaffolded |
+| P20 | 5: Integration and faults | [Control Configuration and Calibration State](../modules/20-control-configuration-and-calibration-state/README.md) | What inputs, observable effects, and failure modes matter when you control Configuration and Calibration State? | scaffolded |
+| P21 | 6: Technical leadership | [Run a Quantitative Trade Study](../modules/21-run-a-quantitative-trade-study/README.md) | What inputs, observable effects, and failure modes matter when you run a Quantitative Trade Study? | scaffolded |
+| P22 | 6: Technical leadership | [Build a Technical Review Package](../modules/22-build-a-technical-review-package/README.md) | What inputs, observable effects, and failure modes matter when you build a Technical Review Package? | scaffolded |
+| P23 | 6: Technical leadership | [Manage Technical Risk](../modules/23-manage-technical-risk/README.md) | What inputs, observable effects, and failure modes matter when you manage Technical Risk? | scaffolded |
+| P24 | 6: Technical leadership | [Design a Reusable Test Architecture](../modules/24-design-a-reusable-test-architecture/README.md) | What inputs, observable effects, and failure modes matter when you design a Reusable Test Architecture? | scaffolded |

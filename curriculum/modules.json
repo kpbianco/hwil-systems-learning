@@ -1,0 +1,408 @@
+{
+  "schema_version": 1,
+  "product": "hwil-systems-learning",
+  "title": "HWIL Systems Architecture, Integration, and Verification",
+  "purpose": "Practice turning mission intent into physical behavior, interfaces, timing, verification, integration evidence, and technical decisions.",
+  "module_count": 24,
+  "progression_rule": "Complete modules in order until the first six are complete; later modules may be selected when their prerequisites are met.",
+  "interaction_contract": {
+    "environment": "MATLAB",
+    "notebook_format": "MATLAB scripts with %% Live Editor cells",
+    "lever_ui": "uifigure controls",
+    "required_sweeps": 2,
+    "required_broken_cases": 1,
+    "randomness": "seeded",
+    "base_matlab_preferred": true,
+    "learning_cycle": [
+      "read",
+      "visualize-baseline",
+      "move-one-lever",
+      "visualize-delta",
+      "read-and-explain"
+    ]
+  },
+  "modules": [
+    {
+      "number": 1,
+      "id": "P01",
+      "title": "Build a Closed-Loop Timing Budget",
+      "guiding_question": "How do stage delay and jitter determine whether a closed loop meets its timing requirement?",
+      "phase": 1,
+      "phase_title": "Mission and behavior",
+      "slug": "build-a-closed-loop-timing-budget",
+      "folder": "modules/01-build-a-closed-loop-timing-budget",
+      "status": "implemented",
+      "implementation_batch": "P01",
+      "prerequisites": [],
+      "evidence_level": "simulated"
+    },
+    {
+      "number": 2,
+      "id": "P02",
+      "title": "Write a CONOPS from an Operator Goal",
+      "guiding_question": "What inputs, observable effects, and failure modes matter when you write a CONOPS from an Operator Goal?",
+      "phase": 1,
+      "phase_title": "Mission and behavior",
+      "slug": "write-a-conops-from-an-operator-goal",
+      "folder": "modules/02-write-a-conops-from-an-operator-goal",
+      "status": "scaffolded",
+      "implementation_batch": "P02",
+      "prerequisites": [
+        "P01"
+      ],
+      "evidence_level": "none"
+    },
+    {
+      "number": 3,
+      "id": "P03",
+      "title": "Define Desired Physical Behavior",
+      "guiding_question": "What inputs, observable effects, and failure modes matter when you define Desired Physical Behavior?",
+      "phase": 1,
+      "phase_title": "Mission and behavior",
+      "slug": "define-desired-physical-behavior",
+      "folder": "modules/03-define-desired-physical-behavior",
+      "status": "scaffolded",
+      "implementation_batch": "P03",
+      "prerequisites": [
+        "P02"
+      ],
+      "evidence_level": "none"
+    },
+    {
+      "number": 4,
+      "id": "P04",
+      "title": "Decompose a System into Functions",
+      "guiding_question": "What inputs, observable effects, and failure modes matter when you decompose a System into Functions?",
+      "phase": 1,
+      "phase_title": "Mission and behavior",
+      "slug": "decompose-a-system-into-functions",
+      "folder": "modules/04-decompose-a-system-into-functions",
+      "status": "scaffolded",
+      "implementation_batch": "P04",
+      "prerequisites": [
+        "P03"
+      ],
+      "evidence_level": "none"
+    },
+    {
+      "number": 5,
+      "id": "P05",
+      "title": "Allocate Functions Across Hardware and Software",
+      "guiding_question": "What inputs, observable effects, and failure modes matter when you allocate Functions Across Hardware and Software?",
+      "phase": 2,
+      "phase_title": "Allocation and interfaces",
+      "slug": "allocate-functions-across-hardware-and-software",
+      "folder": "modules/05-allocate-functions-across-hardware-and-software",
+      "status": "scaffolded",
+      "implementation_batch": "P05",
+      "prerequisites": [
+        "P04"
+      ],
+      "evidence_level": "none"
+    },
+    {
+      "number": 6,
+      "id": "P06",
+      "title": "Trace a Command Path",
+      "guiding_question": "What inputs, observable effects, and failure modes matter when you trace a Command Path?",
+      "phase": 2,
+      "phase_title": "Allocation and interfaces",
+      "slug": "trace-a-command-path",
+      "folder": "modules/06-trace-a-command-path",
+      "status": "scaffolded",
+      "implementation_batch": "P06",
+      "prerequisites": [
+        "P05"
+      ],
+      "evidence_level": "none"
+    },
+    {
+      "number": 7,
+      "id": "P07",
+      "title": "Trace a Measurement Data Path",
+      "guiding_question": "What inputs, observable effects, and failure modes matter when you trace a Measurement Data Path?",
+      "phase": 2,
+      "phase_title": "Allocation and interfaces",
+      "slug": "trace-a-measurement-data-path",
+      "folder": "modules/07-trace-a-measurement-data-path",
+      "status": "scaffolded",
+      "implementation_batch": "P07",
+      "prerequisites": [
+        "P06"
+      ],
+      "evidence_level": "none"
+    },
+    {
+      "number": 8,
+      "id": "P08",
+      "title": "Write an Interface Control Contract",
+      "guiding_question": "What inputs, observable effects, and failure modes matter when you write an Interface Control Contract?",
+      "phase": 2,
+      "phase_title": "Allocation and interfaces",
+      "slug": "write-an-interface-control-contract",
+      "folder": "modules/08-write-an-interface-control-contract",
+      "status": "scaffolded",
+      "implementation_batch": "P08",
+      "prerequisites": [
+        "P07"
+      ],
+      "evidence_level": "none"
+    },
+    {
+      "number": 9,
+      "id": "P09",
+      "title": "Design Startup and Shutdown Sequences",
+      "guiding_question": "What inputs, observable effects, and failure modes matter when you design Startup and Shutdown Sequences?",
+      "phase": 3,
+      "phase_title": "Sequencing and synchronization",
+      "slug": "design-startup-and-shutdown-sequences",
+      "folder": "modules/09-design-startup-and-shutdown-sequences",
+      "status": "scaffolded",
+      "implementation_batch": "P09",
+      "prerequisites": [
+        "P08"
+      ],
+      "evidence_level": "none"
+    },
+    {
+      "number": 10,
+      "id": "P10",
+      "title": "Model System States and Transitions",
+      "guiding_question": "What inputs, observable effects, and failure modes matter when you model System States and Transitions?",
+      "phase": 3,
+      "phase_title": "Sequencing and synchronization",
+      "slug": "model-system-states-and-transitions",
+      "folder": "modules/10-model-system-states-and-transitions",
+      "status": "scaffolded",
+      "implementation_batch": "P10",
+      "prerequisites": [
+        "P09"
+      ],
+      "evidence_level": "none"
+    },
+    {
+      "number": 11,
+      "id": "P11",
+      "title": "Budget Latency and Jitter",
+      "guiding_question": "What inputs, observable effects, and failure modes matter when you budget Latency and Jitter?",
+      "phase": 3,
+      "phase_title": "Sequencing and synchronization",
+      "slug": "budget-latency-and-jitter",
+      "folder": "modules/11-budget-latency-and-jitter",
+      "status": "scaffolded",
+      "implementation_batch": "P11",
+      "prerequisites": [
+        "P10"
+      ],
+      "evidence_level": "none"
+    },
+    {
+      "number": 12,
+      "id": "P12",
+      "title": "Synchronize Distributed Equipment",
+      "guiding_question": "What inputs, observable effects, and failure modes matter when you synchronize Distributed Equipment?",
+      "phase": 3,
+      "phase_title": "Sequencing and synchronization",
+      "slug": "synchronize-distributed-equipment",
+      "folder": "modules/12-synchronize-distributed-equipment",
+      "status": "scaffolded",
+      "implementation_batch": "P12",
+      "prerequisites": [
+        "P11"
+      ],
+      "evidence_level": "none"
+    },
+    {
+      "number": 13,
+      "id": "P13",
+      "title": "Turn Requirements into Verification Methods",
+      "guiding_question": "What inputs, observable effects, and failure modes matter when you turn Requirements into Verification Methods?",
+      "phase": 4,
+      "phase_title": "Verification architecture",
+      "slug": "turn-requirements-into-verification-methods",
+      "folder": "modules/13-turn-requirements-into-verification-methods",
+      "status": "scaffolded",
+      "implementation_batch": "P13",
+      "prerequisites": [
+        "P12"
+      ],
+      "evidence_level": "none"
+    },
+    {
+      "number": 14,
+      "id": "P14",
+      "title": "Build a Verification Cross-Reference Matrix",
+      "guiding_question": "What inputs, observable effects, and failure modes matter when you build a Verification Cross-Reference Matrix?",
+      "phase": 4,
+      "phase_title": "Verification architecture",
+      "slug": "build-a-verification-cross-reference-matrix",
+      "folder": "modules/14-build-a-verification-cross-reference-matrix",
+      "status": "scaffolded",
+      "implementation_batch": "P14",
+      "prerequisites": [
+        "P13"
+      ],
+      "evidence_level": "none"
+    },
+    {
+      "number": 15,
+      "id": "P15",
+      "title": "Choose Instrumentation and Observability Points",
+      "guiding_question": "What inputs, observable effects, and failure modes matter when you choose Instrumentation and Observability Points?",
+      "phase": 4,
+      "phase_title": "Verification architecture",
+      "slug": "choose-instrumentation-and-observability-points",
+      "folder": "modules/15-choose-instrumentation-and-observability-points",
+      "status": "scaffolded",
+      "implementation_batch": "P15",
+      "prerequisites": [
+        "P14"
+      ],
+      "evidence_level": "none"
+    },
+    {
+      "number": 16,
+      "id": "P16",
+      "title": "Define Acceptance Criteria",
+      "guiding_question": "What inputs, observable effects, and failure modes matter when you define Acceptance Criteria?",
+      "phase": 4,
+      "phase_title": "Verification architecture",
+      "slug": "define-acceptance-criteria",
+      "folder": "modules/16-define-acceptance-criteria",
+      "status": "scaffolded",
+      "implementation_batch": "P16",
+      "prerequisites": [
+        "P15"
+      ],
+      "evidence_level": "none"
+    },
+    {
+      "number": 17,
+      "id": "P17",
+      "title": "Plan an Incremental Integration Sequence",
+      "guiding_question": "What inputs, observable effects, and failure modes matter when you plan an Incremental Integration Sequence?",
+      "phase": 5,
+      "phase_title": "Integration and faults",
+      "slug": "plan-an-incremental-integration-sequence",
+      "folder": "modules/17-plan-an-incremental-integration-sequence",
+      "status": "scaffolded",
+      "implementation_batch": "P17",
+      "prerequisites": [
+        "P16"
+      ],
+      "evidence_level": "none"
+    },
+    {
+      "number": 18,
+      "id": "P18",
+      "title": "Contain and Propagate Faults Deliberately",
+      "guiding_question": "What inputs, observable effects, and failure modes matter when you contain and Propagate Faults Deliberately?",
+      "phase": 5,
+      "phase_title": "Integration and faults",
+      "slug": "contain-and-propagate-faults-deliberately",
+      "folder": "modules/18-contain-and-propagate-faults-deliberately",
+      "status": "scaffolded",
+      "implementation_batch": "P18",
+      "prerequisites": [
+        "P17"
+      ],
+      "evidence_level": "none"
+    },
+    {
+      "number": 19,
+      "id": "P19",
+      "title": "Perform Root-Cause Analysis from Evidence",
+      "guiding_question": "What inputs, observable effects, and failure modes matter when you perform Root-Cause Analysis from Evidence?",
+      "phase": 5,
+      "phase_title": "Integration and faults",
+      "slug": "perform-root-cause-analysis-from-evidence",
+      "folder": "modules/19-perform-root-cause-analysis-from-evidence",
+      "status": "scaffolded",
+      "implementation_batch": "P19",
+      "prerequisites": [
+        "P18"
+      ],
+      "evidence_level": "none"
+    },
+    {
+      "number": 20,
+      "id": "P20",
+      "title": "Control Configuration and Calibration State",
+      "guiding_question": "What inputs, observable effects, and failure modes matter when you control Configuration and Calibration State?",
+      "phase": 5,
+      "phase_title": "Integration and faults",
+      "slug": "control-configuration-and-calibration-state",
+      "folder": "modules/20-control-configuration-and-calibration-state",
+      "status": "scaffolded",
+      "implementation_batch": "P20",
+      "prerequisites": [
+        "P19"
+      ],
+      "evidence_level": "none"
+    },
+    {
+      "number": 21,
+      "id": "P21",
+      "title": "Run a Quantitative Trade Study",
+      "guiding_question": "What inputs, observable effects, and failure modes matter when you run a Quantitative Trade Study?",
+      "phase": 6,
+      "phase_title": "Technical leadership",
+      "slug": "run-a-quantitative-trade-study",
+      "folder": "modules/21-run-a-quantitative-trade-study",
+      "status": "scaffolded",
+      "implementation_batch": "P21",
+      "prerequisites": [
+        "P20"
+      ],
+      "evidence_level": "none"
+    },
+    {
+      "number": 22,
+      "id": "P22",
+      "title": "Build a Technical Review Package",
+      "guiding_question": "What inputs, observable effects, and failure modes matter when you build a Technical Review Package?",
+      "phase": 6,
+      "phase_title": "Technical leadership",
+      "slug": "build-a-technical-review-package",
+      "folder": "modules/22-build-a-technical-review-package",
+      "status": "scaffolded",
+      "implementation_batch": "P22",
+      "prerequisites": [
+        "P21"
+      ],
+      "evidence_level": "none"
+    },
+    {
+      "number": 23,
+      "id": "P23",
+      "title": "Manage Technical Risk",
+      "guiding_question": "What inputs, observable effects, and failure modes matter when you manage Technical Risk?",
+      "phase": 6,
+      "phase_title": "Technical leadership",
+      "slug": "manage-technical-risk",
+      "folder": "modules/23-manage-technical-risk",
+      "status": "scaffolded",
+      "implementation_batch": "P23",
+      "prerequisites": [
+        "P22"
+      ],
+      "evidence_level": "none"
+    },
+    {
+      "number": 24,
+      "id": "P24",
+      "title": "Design a Reusable Test Architecture",
+      "guiding_question": "What inputs, observable effects, and failure modes matter when you design a Reusable Test Architecture?",
+      "phase": 6,
+      "phase_title": "Technical leadership",
+      "slug": "design-a-reusable-test-architecture",
+      "folder": "modules/24-design-a-reusable-test-architecture",
+      "status": "scaffolded",
+      "implementation_batch": "P24",
+      "prerequisites": [
+        "P23"
+      ],
+      "evidence_level": "none"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "phases": [
+    {
+      "phase": 1,
+      "title": "Mission and behavior",
+      "module_start": 1,
+      "module_end": 4,
+      "learning_goal": "Build visible, manipulable intuition for mission and behavior."
+    },
+    {
+      "phase": 2,
+      "title": "Allocation and interfaces",
+      "module_start": 5,
+      "module_end": 8,
+      "learning_goal": "Build visible, manipulable intuition for allocation and interfaces."
+    },
+    {
+      "phase": 3,
+      "title": "Sequencing and synchronization",
+      "module_start": 9,
+      "module_end": 12,
+      "learning_goal": "Build visible, manipulable intuition for sequencing and synchronization."
+    },
+    {
+      "phase": 4,
+      "title": "Verification architecture",
+      "module_start": 13,
+      "module_end": 16,
+      "learning_goal": "Build visible, manipulable intuition for verification architecture."
+    },
+    {
+      "phase": 5,
+      "title": "Integration and faults",
+      "module_start": 17,
+      "module_end": 20,
+      "learning_goal": "Build visible, manipulable intuition for integration and faults."
+    },
+    {
+      "phase": 6,
+      "title": "Technical leadership",
+      "module_start": 21,
+      "module_end": 24,
+      "learning_goal": "Build visible, manipulable intuition for technical leadership."
+    }
+  ]
+}
