@@ -77,12 +77,12 @@
       "phase_title": "Mission and behavior",
       "slug": "decompose-a-system-into-functions",
       "folder": "modules/04-decompose-a-system-into-functions",
-      "status": "scaffolded",
+      "status": "implemented",
       "implementation_batch": "P04",
       "prerequisites": [
         "P03"
       ],
-      "evidence_level": "none"
+      "evidence_level": "simulated"
     },
     {
       "number": 5,

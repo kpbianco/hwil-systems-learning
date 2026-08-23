@@ -22,6 +22,7 @@ From a shell:
 ./bin/learn start P01
 ./bin/learn start P02
 ./bin/learn start P03
+./bin/learn start P04
 ./bin/learn list
 ./bin/learn status
 ```
@@ -41,10 +42,12 @@ launch_lesson("P02")
 run_module_checks("P02")
 launch_lesson("P03")
 run_module_checks("P03")
+launch_lesson("P04")
+run_module_checks("P04")
 ```
 
 `P01` is the reference implementation. Implemented modules form the contiguous prefix recorded in
-`curriculum/modules.json`; P02 and P03 add governed successor lessons. A module outside that
+`curriculum/modules.json`; P02 through P04 add governed successor lessons. A module outside that
 frontier remains intentionally non-runnable until its bounded implementation batch is verified.
 
 ## Module layout
