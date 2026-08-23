@@ -109,12 +109,12 @@
       "phase_title": "Allocation and interfaces",
       "slug": "trace-a-command-path",
       "folder": "modules/06-trace-a-command-path",
-      "status": "scaffolded",
+      "status": "implemented",
       "implementation_batch": "P06",
       "prerequisites": [
         "P05"
       ],
-      "evidence_level": "none"
+      "evidence_level": "simulated"
     },
     {
       "number": 7,
