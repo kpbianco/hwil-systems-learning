@@ -20,6 +20,7 @@ From a shell:
 ```bash
 ./bin/learn start
 ./bin/learn start P01
+./bin/learn start P02
 ./bin/learn list
 ./bin/learn status
 ```
@@ -35,9 +36,13 @@ In MATLAB:
 ```matlab
 launch_lesson("P01")
 run_module_checks("P01")
+launch_lesson("P02")
+run_module_checks("P02")
 ```
 
-`P01` is a complete reference implementation. The remaining modules are intentionally scaffolded so each can be implemented in a bounded, reviewable batch.
+`P01` is the reference implementation. Implemented modules form the contiguous prefix recorded in
+`curriculum/modules.json`; P02 adds the first governed successor lesson. A module outside that
+frontier remains intentionally non-runnable until its bounded implementation batch is verified.
 
 ## Module layout
 

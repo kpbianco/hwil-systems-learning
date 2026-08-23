@@ -1,13 +1,14 @@
-# P02 walkthrough: Write a CONOPS from an Operator Goal
+# Walkthrough: Write a CONOPS from an Operator Goal
 
-## Planned learner sequence
-
-1. Read the guiding question: What inputs, observable effects, and failure modes matter when you write a CONOPS from an Operator Goal?
-2. Visualize the deterministic baseline and name every axis and unit.
-3. Move one lever and observe one plot transition at a time.
-4. Return to baseline, move a second independent lever, and identify the tradeoff.
-5. Read the mechanism that explains both visual changes.
-6. Run a deliberately broken case and identify the violated assumption from its symptom.
-7. Run numerical checks and give a two-sentence teach-back.
-
-This sequence is a build contract, not evidence that P02 is implemented.
+1. Read the exact guiding question and the operator goal in `lesson.md`.
+2. Predict once: is reaching the physical state sufficient for operator success?
+3. Run `experiment.m` and inspect only the baseline event timeline first. Name each event and unit.
+4. Inspect the baseline decision-criteria view. Explain why the operator goal is met without safe hold.
+5. In `interactive.m`, increase command latency. Observe the physical effect and feedback move together.
+6. Read the equation that explains that transition, then select **Reset baseline**.
+7. Increase feedback latency. Observe feedback move while the physical-effect time stays fixed.
+8. Read the mechanism, then toggle **Feedback available** off to expose the broken observability case.
+9. Try cancellation before the command, during the action, and after the effect. State why safety wins a tie.
+10. Restore feedback and reset. This fresh baseline is the recovery demonstration; no failed state persists.
+11. Run `run_checks.m` and answer the interpretation questions in `checks.md`.
+12. Teach back a two-sentence CONOPS: mechanism first, operator consequence second.

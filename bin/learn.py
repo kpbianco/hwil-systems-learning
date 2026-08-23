@@ -59,6 +59,8 @@ def print_start(module):
 def cmd_start(args):
     manifest = load_manifest()
     module = resolve_module(manifest, args.module)
+    if module["status"] != "implemented":
+        return print_start(module)
     state = load_state()
     state["current"] = module["id"]
     save_state(state)
@@ -67,7 +69,21 @@ def cmd_start(args):
 def cmd_continue(_args):
     manifest = load_manifest()
     state = load_state()
-    return print_start(resolve_module(manifest, state.get("current")))
+    current = state.get("current")
+    if not current:
+        return print_start(resolve_module(manifest, None))
+    try:
+        module = resolve_module(manifest, current)
+    except SystemExit:
+        module = None
+    if module is None or module["status"] != "implemented":
+        implemented = [item for item in manifest["modules"] if item["status"] == "implemented"]
+        if not implemented:
+            raise SystemExit("No implemented module is available to continue.")
+        module = implemented[-1]
+        state["current"] = module["id"]
+        save_state(state)
+    return print_start(module)
 
 def cmd_list(_args):
     manifest = load_manifest()
