@@ -93,12 +93,12 @@
       "phase_title": "Allocation and interfaces",
       "slug": "allocate-functions-across-hardware-and-software",
       "folder": "modules/05-allocate-functions-across-hardware-and-software",
-      "status": "scaffolded",
+      "status": "implemented",
       "implementation_batch": "P05",
       "prerequisites": [
         "P04"
       ],
-      "evidence_level": "none"
+      "evidence_level": "simulated"
     },
     {
       "number": 6,
