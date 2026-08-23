@@ -189,12 +189,12 @@
       "phase_title": "Sequencing and synchronization",
       "slug": "budget-latency-and-jitter",
       "folder": "modules/11-budget-latency-and-jitter",
-      "status": "scaffolded",
+      "status": "implemented",
       "implementation_batch": "P11",
       "prerequisites": [
         "P10"
       ],
-      "evidence_level": "none"
+      "evidence_level": "simulated"
     },
     {
       "number": 12,
