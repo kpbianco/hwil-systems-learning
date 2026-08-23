@@ -61,12 +61,12 @@
       "phase_title": "Mission and behavior",
       "slug": "define-desired-physical-behavior",
       "folder": "modules/03-define-desired-physical-behavior",
-      "status": "scaffolded",
+      "status": "implemented",
       "implementation_batch": "P03",
       "prerequisites": [
         "P02"
       ],
-      "evidence_level": "none"
+      "evidence_level": "simulated"
     },
     {
       "number": 4,

@@ -2,7 +2,7 @@
 
 **Track:** HWIL Systems Architecture, Integration, and Verification  
 **Phase 1:** Mission and behavior  
-**Status:** scaffolded
+**Status:** implemented
 
 ## Guiding question
 
@@ -10,28 +10,31 @@ What inputs, observable effects, and failure modes matter when you define Desire
 
 ## Physical mental model
 
-Start from a concrete system, measurement, or decision. Change one parameter at a time and connect every visible change to a physical or computational cause.
+A rotary test article receives an accepted position command at time zero. Its transparent second-order
+response exposes position in degrees and velocity in degrees per second. Desired behavior is more than
+“it moves”: the request must be inside command authority, preserve direction, and enter and remain inside
+both position and velocity tolerances by a named deadline.
 
-## Required learning flow
+## Learning flow
 
-1. Establish a deterministic baseline.
-2. Show at least two complementary plots or views.
-3. Expose meaningful parameters as MATLAB controls or clearly editable Live Editor variables.
-4. Sweep two parameters independently.
-5. Include one deliberately broken or misleading case.
-6. Ask one observation question at a time.
-7. Finish with a teach-back and a deterministic check.
+1. Read the physical behavior envelope inherited from the P02 operator transaction.
+2. Inspect the deterministic position baseline, then its complementary velocity view.
+3. Sweep command magnitude and observe position and speed scale together.
+4. Reset, sweep damping ratio, and observe overshoot and sustained settling change.
+5. Request an angle outside command authority and distinguish physical settling from requested success.
+6. Run independent limits and failure checks, answer interpretation questions, and teach back the contract.
 
-## Implementation contract
+## Artifact map
 
-The completed module owns these files:
+- `model.m` — fixed-size, deterministic, presentation-free response and behavior metrics.
+- `experiment.m` — baseline views, two isolated parameter sweeps, and the broken input-envelope case.
+- `interactive.m` — bounded controls for command, damping, response frequency, authority, and deadline.
+- `lesson.m` and `lesson.md` — concept-first tutor narrative and visible equations.
+- `walkthrough.md` — one observation and mechanism transition at a time.
+- `checks.md` and `run_checks.m` — interpretation, limiting cases, malformed inputs, recovery, and bounds.
 
-- `lesson.m` — notebook-style MATLAB sections (`%%`) and concise narrative.
-- `interactive.m` — `uifigure` controls, plots, and immediate feedback.
-- `model.m` — deterministic calculations separated from presentation.
-- `experiment.m` — reproducible baseline, sweeps, and broken case.
-- `lesson.md` — tutor-facing explanation and misconceptions.
-- `walkthrough.md` — expected observations in order.
-- `checks.md` and `run_checks.m` — conceptual and numerical completion checks.
+## Dependencies and evidence boundary
 
-Prefer base MATLAB. Optional toolbox comparisons may be added only after the underlying operation is visible.
+The implementation uses base MATLAB operations and no toolbox, external data, random source, device,
+network, or file I/O. The retained batch evidence establishes static source and contract checks only;
+MATLAB-runtime, UI, numerical-fidelity, bench, HIL, and field validation require separate evidence.
