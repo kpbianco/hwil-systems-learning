@@ -90,15 +90,20 @@ def cmd_list(_args):
     state = load_state()
     completed = state.get("completed", {})
     for m in manifest["modules"]:
-        marker = "✓" if completed.get(m["id"]) else ("●" if m["status"] == "implemented" else "○")
+        is_implemented = m["status"] == "implemented"
+        marker = "✓" if is_implemented and completed.get(m["id"]) else ("●" if is_implemented else "○")
         print(f"{marker} {m['id']}  Phase {m['phase']}  {m['title']} [{m['status']}]")
     return 0
 
 def cmd_status(_args):
     manifest = load_manifest()
     state = load_state()
-    complete = len(state.get("completed", {}))
-    implemented = sum(m["status"] == "implemented" for m in manifest["modules"])
+    completed = state.get("completed", {})
+    implemented_modules = [
+        module for module in manifest["modules"] if module["status"] == "implemented"
+    ]
+    complete = sum(bool(completed.get(module["id"])) for module in implemented_modules)
+    implemented = len(implemented_modules)
     print(f"Track: {manifest['title']}")
     print(f"Modules: {manifest['module_count']} total, {implemented} implemented, {complete} completed")
     print(f"Current: {state.get('current') or 'none'}")
