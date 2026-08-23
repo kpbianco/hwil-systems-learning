@@ -1,13 +1,14 @@
-# P03 walkthrough: Define Desired Physical Behavior
+# Walkthrough: Define Desired Physical Behavior
 
-## Planned learner sequence
-
-1. Read the guiding question: What inputs, observable effects, and failure modes matter when you define Desired Physical Behavior?
-2. Visualize the deterministic baseline and name every axis and unit.
-3. Move one lever and observe one plot transition at a time.
-4. Return to baseline, move a second independent lever, and identify the tradeoff.
-5. Read the mechanism that explains both visual changes.
-6. Run a deliberately broken case and identify the violated assumption from its symptom.
-7. Run numerical checks and give a two-sentence teach-back.
-
-This sequence is a build contract, not evidence that P03 is implemented.
+1. Read the exact guiding question and connect the P02 requested state to this quantitative physical envelope.
+2. Predict once whether stopping at 45 degrees satisfies a 70-degree request.
+3. Run `experiment.m` and inspect only the baseline position view. Name the command, degrees, tolerance, and deadline.
+4. Inspect the complementary velocity view. Explain why position in band is insufficient while motion is not quiet.
+5. In `interactive.m`, reset and change command angle only. Observe position and speed scale together.
+6. Read the lever-one mechanism; note that normalized overshoot stays fixed in the valid linear envelope.
+7. Select **Reset baseline**, then change damping only. Observe overshoot and sustained settling.
+8. Read the lever-two mechanism; do not claim that every metric improves monotonically with damping.
+9. Run the broken 70-degree request against 45 degrees of command authority. Compare requested and effective target.
+10. Shorten the deadline to expose a late-response failure without changing the physical trajectory.
+11. Restore the baseline. This fresh result demonstrates stateless recovery and isolation from failed cases.
+12. Run `run_checks.m`, answer one interpretation question at a time in `checks.md`, and teach back the behavior contract.
