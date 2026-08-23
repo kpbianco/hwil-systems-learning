@@ -173,12 +173,12 @@
       "phase_title": "Sequencing and synchronization",
       "slug": "model-system-states-and-transitions",
       "folder": "modules/10-model-system-states-and-transitions",
-      "status": "scaffolded",
+      "status": "implemented",
       "implementation_batch": "P10",
       "prerequisites": [
         "P09"
       ],
-      "evidence_level": "none"
+      "evidence_level": "simulated"
     },
     {
       "number": 11,
