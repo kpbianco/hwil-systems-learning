@@ -141,12 +141,12 @@
       "phase_title": "Allocation and interfaces",
       "slug": "write-an-interface-control-contract",
       "folder": "modules/08-write-an-interface-control-contract",
-      "status": "scaffolded",
+      "status": "implemented",
       "implementation_batch": "P08",
       "prerequisites": [
         "P07"
       ],
-      "evidence_level": "none"
+      "evidence_level": "simulated"
     },
     {
       "number": 9,
