@@ -157,12 +157,12 @@
       "phase_title": "Sequencing and synchronization",
       "slug": "design-startup-and-shutdown-sequences",
       "folder": "modules/09-design-startup-and-shutdown-sequences",
-      "status": "scaffolded",
+      "status": "implemented",
       "implementation_batch": "P09",
       "prerequisites": [
         "P08"
       ],
-      "evidence_level": "none"
+      "evidence_level": "simulated"
     },
     {
       "number": 10,
