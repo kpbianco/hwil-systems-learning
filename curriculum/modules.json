@@ -45,12 +45,12 @@
       "phase_title": "Mission and behavior",
       "slug": "write-a-conops-from-an-operator-goal",
       "folder": "modules/02-write-a-conops-from-an-operator-goal",
-      "status": "scaffolded",
+      "status": "implemented",
       "implementation_batch": "P02",
       "prerequisites": [
         "P01"
       ],
-      "evidence_level": "none"
+      "evidence_level": "simulated"
     },
     {
       "number": 3,

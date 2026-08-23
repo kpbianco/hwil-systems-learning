@@ -7,7 +7,7 @@ reviewable implementation batch. `implemented` means the complete learner slice 
 | Batch | Phase | Module | Guiding question | Status |
 | --- | --- | --- | --- | --- |
 | P01 | 1: Mission and behavior | [Build a Closed-Loop Timing Budget](../modules/01-build-a-closed-loop-timing-budget/README.md) | How do stage delay and jitter determine whether a closed loop meets its timing requirement? | implemented |
-| P02 | 1: Mission and behavior | [Write a CONOPS from an Operator Goal](../modules/02-write-a-conops-from-an-operator-goal/README.md) | What inputs, observable effects, and failure modes matter when you write a CONOPS from an Operator Goal? | scaffolded |
+| P02 | 1: Mission and behavior | [Write a CONOPS from an Operator Goal](../modules/02-write-a-conops-from-an-operator-goal/README.md) | What inputs, observable effects, and failure modes matter when you write a CONOPS from an Operator Goal? | implemented |
 | P03 | 1: Mission and behavior | [Define Desired Physical Behavior](../modules/03-define-desired-physical-behavior/README.md) | What inputs, observable effects, and failure modes matter when you define Desired Physical Behavior? | scaffolded |
 | P04 | 1: Mission and behavior | [Decompose a System into Functions](../modules/04-decompose-a-system-into-functions/README.md) | What inputs, observable effects, and failure modes matter when you decompose a System into Functions? | scaffolded |
 | P05 | 2: Allocation and interfaces | [Allocate Functions Across Hardware and Software](../modules/05-allocate-functions-across-hardware-and-software/README.md) | What inputs, observable effects, and failure modes matter when you allocate Functions Across Hardware and Software? | scaffolded |
